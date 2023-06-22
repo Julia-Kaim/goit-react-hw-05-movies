@@ -2,7 +2,7 @@ import axios from 'axios';
 
 axios.defaults.baseURL = 'https://api.themoviedb.org/3/';
 
-const KEY = '1c946dce2b60cb636de6f72a25cb04da';
+const KEY = '9a6ab8b564f6ae6f01c888adcb44ce72';
 export const IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
 
 export const searchMovies = async stringToSearch => {

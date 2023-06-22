@@ -4,20 +4,12 @@ import { lazy, Suspense } from 'react';
 import Container from './components/Container/Container';
 import Loader from 'components/Loader/Loader';
 
-const HomePage = lazy(() =>
-  import('./pages/HomePage' /* webpackChunkName:"HomePage" */)
-);
-const MoviesPage = lazy(() =>
-  import('./pages/MoviesPage' /* webpackChunkName:"MoviesPage" */)
-);
+const HomePage = lazy(() => import('./pages/HomePage'));
+const MoviesPage = lazy(() => import('./pages/MoviesPage'));
 const MovieDetailsPage = lazy(() =>
-  import(
-    './pages/MovieDetailsPage/MovieDetailsPage' /* webpackChunkName:"MovieDetailsPage" */
-  )
+  import('./pages/MovieDetailsPage/MovieDetailsPage')
 );
-const NotFoundView = lazy(() =>
-  import('./pages/NotFoundView' /* webpackChunkName:"NotFoundView" */)
-);
+const NotFoundView = lazy(() => import('./pages/NotFoundView'));
 
 export default function App() {
   return (
